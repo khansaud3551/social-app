@@ -25,17 +25,17 @@ const nextConfig: NextConfig = {
                 hostname: 'ui.shadcn.com'
             }
         ]
-    },
-    experimental: {
-        turbo: {
-            rules: {
-                '*.svg': {
-                    loaders: ['@svgr/webpack'],
-                    as: '*.js'
-                }
-            }
-        }
     }
+    // experimental: {
+    //     turbo: {
+    //         rules: {
+    //             '*.svg': {
+    //                 loaders: ['@svgr/webpack'],
+    //                 as: '*.js'
+    //             }
+    //         }
+    //     }
+    // }
 };
 
 export default withBundleAnalyzer(nextConfig);
